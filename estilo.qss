@@ -1,0 +1,188 @@
+/* Fondo general */
+QMainWindow {
+    background-image: url("Fondo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* QLabel con fondo semitransparente para contraste */
+QLabel {
+    background-color: rgba(255, 255, 255, 180);
+    color: #222;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* QScrollArea para sección de avisos */
+QScrollArea {
+    background: transparent;
+    border: none;
+}
+QScrollArea > QWidget {
+    background: transparent;
+}
+
+/* Botones */
+QPushButton, QToolButton {
+    background-color: rgba(255, 255, 255, 200);
+    color: #000;
+    border: 1px solid #666;
+    border-radius: 6px;
+    padding: 6px;
+}
+QPushButton:hover, QToolButton:hover {
+    background-color: rgba(255, 255, 255, 240);
+}
+QPushButton:pressed, QToolButton:pressed {
+    background-color: rgba(200, 200, 200, 240);
+}
+
+/* Menú de barra */
+QMenuBar {
+    background-color: rgba(255, 255, 255, 200);
+}
+QMenuBar::item {
+    spacing: 3px;
+    padding: 5px 15px;
+    background: transparent;
+    color: #000;
+}
+QMenuBar::item:selected {
+    background: rgba(180, 180, 180, 200);
+}
+
+/* Menús desplegables */
+QMenu {
+    background-color: rgba(255, 255, 255, 230);
+    color: #000;
+    border: 1px solid #aaa;
+}
+QMenu::item:selected {
+    background-color: rgba(200, 200, 200, 200);
+}
+
+/* Toolbars */
+QToolBar {
+    background-color: rgba(255, 255, 255, 200);
+    border: 1px solid #999;
+}
+
+/* Entradas de texto */
+QLineEdit, QTextEdit {
+    background-color: rgba(255, 255, 255, 200);
+    color: #000;
+    border: 1px solid #ccc;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+/* Tablas */
+QTableWidget, QTableView {
+    background-color: rgba(255, 255, 255, 200);
+    color: #000;
+    border: 1px solid #aaa;
+    gridline-color: #ccc;
+}
+QHeaderView::section {
+    background-color: rgba(220, 220, 220, 200);
+    color: #000;
+    padding: 4px;
+    border: 1px solid #aaa;
+}
+
+/* SpinBox */
+QSpinBox {
+    background-color: rgba(255, 255, 255, 200);
+    color: #000;
+    border: 1px solid #999;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+/* RadioButton */
+QRadioButton {
+    background-color: rgba(255, 255, 255, 180);
+    color: #000;
+    padding: 3px 6px;
+    border-radius: 5px;
+}
+
+/* Dialogs */
+QDialog, QMessageBox {
+    background-color: rgba(255, 255, 255, 230);
+}
+QMessageBox QLabel {
+    color: #000;
+}
+
+/* Scrollbars */
+QScrollBar:vertical, QScrollBar:horizontal {
+    background: transparent;
+    border: none;
+    width: 12px;
+    margin: 0px;
+}
+QScrollBar::handle:vertical, QScrollBar::handle:horizontal {
+    background: rgba(100, 100, 100, 100);
+    border-radius: 6px;
+}
+QScrollBar::add-line, QScrollBar::sub-line {
+    background: none;
+    border: none;
+}
+
+/* QTimeEdit */
+QTimeEdit {
+    background-color: rgba(255, 255, 255, 200);
+    color: #000;
+    border: 1px solid #999;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+/* QAbstractItemView (para que las tablas se comporten igual) */
+QAbstractItemView {
+    background-color: rgba(255, 255, 255, 200);
+    color: #000;
+}
+
+/* Contenedor interno del QScrollArea */
+QScrollArea > QWidget > QWidget {
+    background-color: transparent;
+}
+
+/* ComboBox */
+QComboBox {
+    background-color: rgba(255, 255, 255, 200);
+    color: #000;
+    border: 1px solid #999;
+    border-radius: 5px;
+    padding: 4px;
+}
+
+/* Flecha del ComboBox */
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px;
+    border-left: 1px solid #999;
+    background-color: rgba(220, 220, 220, 200);
+}
+
+/* Icono de la flecha */
+QComboBox::down-arrow {
+    image: url(:/icons/down-arrow.png); /* O usa una imagen personalizada */
+    width: 12px;
+    height: 12px;
+}
+
+/* Lista desplegable */
+QComboBox QAbstractItemView {
+    background-color: rgba(255, 255, 255, 230);
+    border: 1px solid #aaa;
+    selection-background-color: rgba(200, 200, 200, 200);
+    color: #000;
+}
+
